@@ -111,8 +111,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         
         // play the recording!
         audioPlayerNode.play()
-    }
-    
+    }    
     
     // MARK: Connect List of Audio Nodes
     
@@ -140,7 +139,6 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         }
     }
     
-    
     // MARK: UI Functions
 
     func configureUI(playState: PlayingState) {
@@ -164,21 +162,9 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         reverbButton.enabled = enabled
     }
 
-    
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: Alerts.DismissAlert, style: .Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        presentViewController(alert, animated: true, completion: nil)
     }
-
-    
 }
-
-
-
-
-
-
-
-
-

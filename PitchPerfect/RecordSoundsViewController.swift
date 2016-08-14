@@ -26,10 +26,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         stopButton.enabled = false
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     @IBOutlet weak var recordButton: UIButton!
     
     @IBAction func recordAudio(sender: AnyObject) {
@@ -69,7 +65,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopButton: UIButton!
     
     @IBAction func stopRecording(sender: AnyObject) {
-        // In the stopRecordingAudio() function of RecordSoundsViewController(), set the shared instance to be inactive
         
         print("Stop Recording Button Pressed")
         recordButton.enabled = true
@@ -83,8 +78,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         print("View Will Appear Called")
-        
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
@@ -104,11 +99,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             playSoundVC.recordedAudioURL = recordAudioURL
         }
     }
-    
-    
-    
-    
-    
-    
+  
 }
 
