@@ -1,11 +1,11 @@
+## Headings 
 Project Overview
 An iPhone app that allows users to record their voice and then modulate the recorded audio to sound like a Chipmunk or Darth Vader. This app will also let the user speed up or slow down the rate of playback.
-
+## Headings
 Why this project?
 Pitch Perfect provides a substantial, while not overly complicated, introduction to the iOS ecosystem.
-
+## Headings
 What did I learn?
-
 Create a new project
 Add buttons, images, labels and create user interfaces for the app using the Storyboard
 Leverage the Model View Controller (MVC) design principles; this includes writing custom model code, and using UIViewController, and UIView
