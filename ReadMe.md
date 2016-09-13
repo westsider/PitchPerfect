@@ -18,4 +18,4 @@ Run the iOS simulator and download the app on a physical device
 Search documentation, resolve bugs, and read other people’s code
 Why is this project meaningful to my career?
 ====================
-MVC is the cornerstone of all iOS app development; 
+MVC is the cornerstone of all iOS app development
